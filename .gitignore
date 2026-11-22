@@ -13,3 +13,4 @@ test-results
 lighthouse-*.json
 photos/
 roots-n-style-claude-code-prompt.md
+.env*
