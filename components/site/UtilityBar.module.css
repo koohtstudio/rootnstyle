@@ -1,0 +1,14 @@
+.bar { background: var(--plum-dark); color: var(--cream); font-size: 0.82rem; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; flex-wrap: wrap; padding-block: 2px; }
+.row p { display: inline-flex; align-items: center; gap: 6px; margin: 0; }
+.row svg { color: var(--blush); flex: 0 0 auto; }
+.links { gap: 4px; }
+.links a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding-inline: 8px; color: var(--cream); text-decoration: none; }
+.links a:hover { color: #fff; text-decoration: underline; }
+@media (max-width: 720px) {
+  .addr { display: none !important; }
+  .row { justify-content: space-between; }
+}
+@media (max-width: 420px) {
+  .hours { font-size: 0.78rem; }
+}

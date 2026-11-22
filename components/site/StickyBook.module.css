@@ -1,0 +1,3 @@
+.bar { position: fixed; z-index: 40; left: 0; right: 0; bottom: 0; display: none; padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom)); background: linear-gradient(to top, var(--cream-2) 60%, transparent); }
+.bar :global(.btn) { width: 100%; box-shadow: var(--shadow); }
+@media (max-width: 767px) { .bar { display: block; } }

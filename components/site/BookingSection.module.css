@@ -1,0 +1,10 @@
+.section { background: var(--ink); color: var(--cream); padding-block: clamp(48px, 8vw, 104px); scroll-margin-top: 72px; }
+.grid { display: grid; gap: 36px; align-items: start; }
+.copy { display: grid; gap: 18px; justify-items: start; }
+.title { font-size: clamp(2.4rem, 5.5vw, 4rem); color: #fff; }
+.title em { color: var(--blush); }
+.lead { color: rgba(251, 233, 224, 0.85); max-width: 44ch; font-size: 1.08rem; }
+.steps { display: grid; gap: 10px; margin-top: 6px; }
+.steps li { display: flex; align-items: center; gap: 12px; font-weight: 500; }
+.steps span { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: rgba(242, 185, 164, 0.18); color: var(--blush); font-size: 0.9rem; }
+@media (min-width: 960px) { .grid { grid-template-columns: 0.8fr 1.2fr; gap: 64px; } .copy { position: sticky; top: 110px; } }

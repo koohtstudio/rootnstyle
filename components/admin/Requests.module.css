@@ -1,0 +1,28 @@
+.skels { display: grid; gap: 12px; }
+.n { display: inline-grid; place-items: center; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: rgba(122, 43, 79, 0.1); font-size: 0.75rem; }
+[aria-selected="true"] .n { background: rgba(255, 255, 255, 0.22); }
+.layout { display: grid; gap: 18px; margin-top: 12px; align-items: start; }
+.list { display: grid; gap: 10px; }
+.item { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 76px; padding: 12px 16px; text-align: left; background: #fff; border: 1.5px solid var(--line); border-radius: 20px; transition: border-color 0.18s, box-shadow 0.18s; }
+.item:hover { border-color: #d9b9aa; }
+.on { border-color: var(--plum); box-shadow: 0 0 0 3px rgba(122, 43, 79, 0.12); }
+.avatar { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--blush); color: var(--plum-dark); font-weight: 700; flex: 0 0 auto; }
+.text { display: grid; flex: 1; min-width: 0; }
+.text strong { font-weight: 600; }
+.text small { color: var(--muted); font-size: 0.85rem; }
+.detail { position: sticky; top: 24px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow-sm); }
+.card { display: grid; gap: 16px; }
+.dhead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.dname { font-size: 1.9rem; font-weight: 600; }
+.dl { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--cream-2); margin: 0; }
+.dl div { display: grid; grid-template-columns: 84px 1fr; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.dl div:last-child { border-bottom: 0; }
+.dl dt { color: var(--muted); font-size: 0.86rem; }
+.dl dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
+.none { color: var(--muted); font-weight: 400; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.err { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 14px; background: var(--bad-bg); color: var(--bad); font-weight: 500; }
+.suggest { display: grid; gap: 12px; padding: 16px; border-radius: 18px; background: var(--cream-2); border: 1px solid var(--line); }
+.suggest h3 { font-size: 1.35rem; }
+.closeBtn { justify-self: start; }
+@media (min-width: 1100px) { .layout { grid-template-columns: minmax(0, 1fr) 440px; } }

@@ -1,0 +1,11 @@
+.box { display: grid; justify-items: center; text-align: center; gap: 8px; padding: 40px 20px; border: 1.5px dashed var(--line); border-radius: var(--radius); background: color-mix(in srgb, var(--cream) 45%, #fff); }
+.badge { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--cream); color: var(--plum); }
+.title { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; line-height: 1.15; }
+.body { color: var(--muted); max-width: 44ch; }
+.action { margin-top: 8px; }
+.error { border-color: color-mix(in srgb, var(--bad) 40%, var(--line)); }
+.error .badge { background: var(--bad-bg); color: var(--bad); }
+.skel { display: block; background: linear-gradient(90deg, #f3e3da 25%, #fbf0ea 50%, #f3e3da 75%); background-size: 200% 100%; animation: shimmer 1.4s linear infinite; }
+.loading { display: grid; gap: 12px; }
+@keyframes shimmer { to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .skel { animation: none; } }

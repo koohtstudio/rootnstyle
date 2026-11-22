@@ -1,0 +1,15 @@
+.page { min-height: 100dvh; display: grid; place-items: center; padding: 24px 16px; background: radial-gradient(900px 400px at 80% 0%, rgba(242, 185, 164, 0.5), transparent 60%), var(--cream); }
+.card { display: grid; gap: 14px; justify-items: center; text-align: center; width: min(520px, 100%); padding: clamp(24px, 5vw, 44px); background: var(--cream-2); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+.title { font-size: clamp(2.2rem, 6vw, 3rem); }
+.lead { color: var(--muted); max-width: 40ch; }
+.roles { display: grid; gap: 12px; width: 100%; margin-top: 6px; }
+.role { display: flex; align-items: center; gap: 14px; text-align: left; min-height: 72px; padding: 14px 16px; border-radius: 20px; border: 1.5px solid var(--line); background: #fff; transition: border-color 0.18s, transform 0.18s; }
+.role:hover:not([disabled]) { border-color: var(--plum); transform: translateY(-1px); }
+.role[disabled] { opacity: 0.6; cursor: wait; }
+.role strong { display: block; font-size: 1rem; }
+.role small { display: block; color: var(--muted); font-size: 0.84rem; line-height: 1.35; margin-top: 2px; }
+.rIcon { display: grid; place-items: center; flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%; background: var(--cream); color: var(--plum); }
+.error { color: var(--bad); font-weight: 500; }
+.note { font-size: 0.85rem; color: var(--warn); background: var(--warn-bg); padding: 6px 14px; border-radius: 999px; }
+.back { display: inline-flex; align-items: center; min-height: 44px; }
+@media (prefers-reduced-motion: reduce) { .role { transition: none; } }

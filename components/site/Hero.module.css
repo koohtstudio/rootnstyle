@@ -1,0 +1,14 @@
+.hero { background: radial-gradient(1200px 520px at 85% 0%, rgba(242, 185, 164, 0.5), transparent 60%), linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%); padding-block: clamp(32px, 6vw, 72px) clamp(40px, 7vw, 88px); overflow: hidden; }
+.grid { display: grid; gap: 40px; align-items: center; }
+.copy { display: grid; gap: 20px; justify-items: start; }
+.title { font-size: clamp(3rem, 9vw, 5.8rem); letter-spacing: -0.02em; }
+.sub { font-size: 1.12rem; color: var(--muted); max-width: 46ch; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.art { position: relative; justify-self: center; width: min(86vw, 440px); }
+.blob { position: absolute; inset: auto -8% -6% auto; width: 62%; aspect-ratio: 1; border-radius: 50%; background: var(--blush); opacity: 0.65; z-index: 0; }
+.arch { position: relative; z-index: 1; aspect-ratio: 4 / 5; border-radius: 999px 999px 28px 28px; overflow: hidden; background: var(--blush); box-shadow: var(--shadow); }
+.img { object-fit: cover; object-position: 63% 28%; }
+@media (min-width: 900px) {
+  .grid { grid-template-columns: 1.05fr 0.95fr; gap: 64px; }
+  .art { width: min(100%, 480px); justify-self: end; }
+}

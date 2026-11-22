@@ -1,0 +1,6 @@
+.logo { display: inline-flex; align-items: center; text-decoration: none; min-height: 44px; }
+.mark { border-radius: 50%; box-shadow: 0 0 0 1.5px var(--line); }
+.light .mark { box-shadow: 0 0 0 1.5px rgba(251, 233, 224, 0.3); }
+.wordmark { font-family: var(--font-display); font-weight: 600; font-size: 1.7rem; color: var(--plum); letter-spacing: -0.01em; }
+.wordmark em { font-style: italic; color: var(--rose-2); }
+.light .wordmark { color: var(--cream); }

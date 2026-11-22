@@ -1,0 +1,6 @@
+.section { background: var(--plum); color: var(--cream); padding-block: clamp(44px, 7vw, 80px); }
+.inner { display: grid; gap: 24px; align-items: center; }
+.title { font-size: clamp(2rem, 4.5vw, 3.2rem); margin-top: 10px; color: #fff; }
+.title em { color: var(--blush); }
+.body { margin-top: 12px; max-width: 52ch; color: rgba(251, 233, 224, 0.9); }
+@media (min-width: 800px) { .inner { grid-template-columns: 1fr auto; gap: 48px; } }
