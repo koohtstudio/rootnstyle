@@ -29,7 +29,8 @@ export function DashboardView() {
 
   const all = bookings.data;
   const svcName = (id: string) => services.data?.find((s) => s.id === id)?.name ?? "Service";
-  const monday = startOfWeekMonday(now.dateKey);
+  // On a Sunday the working week is nearly over, so look ahead to the coming Tuesday to Sunday.
+  const monday = dayOfWeek(now.dateKey) === 0 ? addDays(startOfWeekMonday(now.dateKey), 7) : startOfWeekMonday(now.dateKey);
   const weekDays = [1, 2, 3, 4, 5, 6].map((n) => addDays(monday, n)); // Tue to Sun
   const inWeek = (b: { start: string }) => weekDays.includes(splitStart(b.start).dateKey);
 
